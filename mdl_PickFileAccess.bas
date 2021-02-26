@@ -7,7 +7,7 @@ Option Private Module
 ' By..........: SILVA, ADILIO
 ' Contact.....: gomesadilio@outlook.com
 ' Date........: 1/1/2021
-' Description.: Pick a folder
+' Description.: Pick a file
 '---------------------------------------------------------------------------------------
 
 '                         .
@@ -24,7 +24,7 @@ Option Private Module
 '               | |
 '               c--`
 
-Public Function PickFolderAccess() As String
+Public Function PickFileAccess() As String
 
 	Dim objFd 			As FileDialog
     
@@ -43,7 +43,7 @@ Public Function PickFolderAccess() As String
         .FilterIndex = 1
         
         If .Show Then
-            PickFolderAccess = .SelectedItems.Item(1)
+            PickFileAccess = .SelectedItems.Item(1)
         End If
         
     End With
