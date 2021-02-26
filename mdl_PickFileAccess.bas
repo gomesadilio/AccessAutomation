@@ -26,7 +26,7 @@ Option Private Module
 
 Public Function PickFileAccess() As String
 
-	Dim objFd 			As FileDialog
+		Dim objFd 			As FileDialog 
     
     Set objFd = Application.FileDialog(msoFileDialogOpen)
     
